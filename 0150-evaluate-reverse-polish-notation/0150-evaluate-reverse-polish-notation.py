@@ -2,9 +2,17 @@ class Solution:
     def evalRPN(self, tokens: List[str]) -> int:
         stack = list()
         for i in range(len(tokens)):
-            if tokens[i].strip('-').isdigit(): stack.append(tokens[i])
-            elif tokens[i] in "+-*/":
+            if tokens[i] in "+-*/":
                 second = stack.pop()
                 first = stack.pop()
-                stack.append(str(int(eval(first + tokens[i] + second))))
-        return int(stack.pop())
+                if tokens[i] == '+':
+                    stack.append(first + second)
+                elif tokens[i] == '-':
+                    stack.append(first - second)
+                elif tokens[i] == '*':
+                    stack.append(first * second)
+                elif tokens[i] == '/':
+                    stack.append(int(first / second))
+            else:
+                stack.append(int(tokens[i]))
+        return stack.pop()
