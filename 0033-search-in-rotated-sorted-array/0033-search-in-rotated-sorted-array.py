@@ -1,35 +1,22 @@
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
-        if len(nums) == 1:
-            return 0 if nums[0] == target else -1
-
         lo, hi = 0, len(nums) - 1
 
-        while lo < hi:
-            mid = lo + (hi - lo) // 2
+        while lo <= hi:
+            mid = (lo + hi) // 2
 
-            if nums[mid] < nums[hi]:
-                hi = mid
+            if target == nums[mid]:
+                return mid
+
+            if nums[lo] <= nums[mid]:
+                if target > nums[mid] or target < nums[lo]:
+                    lo = mid + 1
+                else:
+                    hi = mid - 1
             else:
-                lo = mid + 1
+                if target < nums[mid] or target > nums[hi]:
+                    hi = mid - 1
+                else:
+                    lo = mid + 1
 
-        pivot = lo
-        original = nums[pivot:] + nums[:pivot]
-        lo, hi = 0, len(original) - 1
-
-        while lo < hi:
-            mid = lo + (hi - lo) // 2
-
-            if original[mid] == target:
-                if mid + pivot >= len(nums):
-                    return mid + pivot - len(nums)
-                else: return mid + pivot
-            elif original[mid] < target:
-                lo = mid + 1
-            else:
-                hi = mid
-
-        if original[lo] == target:
-            if lo + pivot >= len(nums): return lo + pivot - len(nums)
-            else: return lo + pivot
         return -1
