@@ -1,31 +1,27 @@
 class Solution {
     List<List<Integer>> result = new ArrayList<>();
-    Set<List<Integer>> record = new HashSet<>();
-    Set<Integer> num = new HashSet<>();
 
-    private void backtrack(int[] nums, List<Integer> route) {
-        if (route.size() == nums.length && !record.contains(route)) {
-            List<Integer> temp = new ArrayList<Integer>(route);
-            record.add(temp);
-            result.add(temp);
+    private void backtrack(int[] nums, List<Integer> route, boolean[] used) {
+        if (route.size() == nums.length) {
+            result.add(new ArrayList<Integer>(route));
             return;
         }
 
         for (int i = 0; i < nums.length; i++) {
-            if (num.contains(i)) {
+            if (used[i] || (i > 0 && nums[i] == nums[i - 1] && !used[i - 1])) {
                 continue;
             }
             route.add(nums[i]);
-            num.add(i);
-            backtrack(nums, route);
-            num.remove(i);
+            used[i] = true;
+            backtrack(nums, route, used);
+            used[i] = false;
             route.remove(route.size() - 1);
         }
     }
 
     public List<List<Integer>> permuteUnique(int[] nums) {
         Arrays.sort(nums);
-        backtrack(nums, new ArrayList<>());
+        backtrack(nums, new ArrayList<>(), new boolean[nums.length]);
         return result;
     }
 }
