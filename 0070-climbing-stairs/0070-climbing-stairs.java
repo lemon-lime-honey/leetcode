@@ -4,14 +4,14 @@ class Solution {
             return 1;
         }
 
-        int[] dp = new int[n];
-        dp[0] = 1;
-        dp[1] = 2;
+        int now = 1, before = 1;
 
-        for (int i = 2; i < n; i++) {
-            dp[i] = dp[i - 1] + dp[i - 2];
+        for (int i = 1; i < n; i++) {
+            int temp = now;
+            now = temp + before;
+            before = temp;
         }
 
-        return dp[n - 1];
+        return now;
     }
 }
