@@ -1,8 +1,12 @@
 class Solution:
     def climbStairs(self, n: int) -> int:
-        dp = [1, 2]
+        if n == 1: return 1
 
-        for i in range(n - 2):
-            dp.append(dp[-1] + dp[-2])
+        now, before = 1, 1
 
-        return dp[n - 1]
+        for i in range(1, n):
+            temp = now
+            now = temp + before
+            before = temp
+
+        return now
