@@ -3,16 +3,19 @@ import heapq
 
 class Solution:
     def kSmallestPairs(self, nums1: List[int], nums2: List[int], k: int) -> List[List[int]]:
+        heap = list()
         result = list()
 
-        for i in range(min(k, len(nums1))):
-            for j in range(min(k, len(nums2))):
-                if len(result) < k:
-                    heapq.heappush(result, (-(nums1[i] + nums2[j]), [nums1[i], nums2[j]]))
-                else:
-                    if result[0][0] < -(nums1[i] + nums2[j]):
-                        heapq.heappop(result)
-                        heapq.heappush(result, (-(nums1[i] + nums2[j]), [nums1[i], nums2[j]]))
-                    else: break
+        for num in nums1:
+            heapq.heappush(heap, (num + nums2[0], 0))
 
-        return [coord[1] for coord in result]
+        while (k > 0 and heap):
+            total, idx = heapq.heappop(heap)
+            result.append([total - nums2[idx], nums2[idx]])
+
+            if (idx + 1 < len(nums2)):
+                heapq.heappush(heap, (total - nums2[idx] + nums2[idx + 1], idx + 1))
+
+            k -= 1
+
+        return result
