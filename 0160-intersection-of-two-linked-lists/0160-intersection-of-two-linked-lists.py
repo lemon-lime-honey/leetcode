@@ -1,14 +1,12 @@
 class Solution:
     def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> Optional[ListNode]:
-        nodes = set()
+        a, b = headA, headB
 
-        while headA:
-            nodes.add(headA)
-            headA = headA.next
+        while a != b:
+            if a: a = a.next
+            else: a = headB
 
-        while headB:
-            if headB in nodes:
-                return headB
-            headB = headB.next
+            if b: b = b.next
+            else: b = headA
 
-        return None
+        return a
