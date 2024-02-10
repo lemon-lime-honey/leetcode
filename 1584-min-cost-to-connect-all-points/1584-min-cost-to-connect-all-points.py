@@ -1,38 +1,31 @@
+from collections import defaultdict
 import heapq
 
 
 class Solution:
     def minCostConnectPoints(self, points: List[List[int]]) -> int:
-        def find(p):
-            if chk[p] != p:
-                chk[p] = find(chk[p])
-            return chk[p]
+        edges = defaultdict(list)
+        n = len(points)
 
-
-        def union(p, q):
-            p, q = find(p), find(q)
-            if p < q:
-                chk[q] = p
-            else:
-                chk[p] = q
-
-
-        data = list()
-
-        for i in range(len(points)):
-            for j in range(i + 1, len(points)):
-                dist = (abs(points[i][0] - points[j][0]) + 
+        for i in range(n):
+            for j in range(i + 1, n):
+                dist = (abs(points[i][0] - points[j][0]) +
                         abs(points[i][1] - points[j][1]))
-                heapq.heappush(data, (dist, i, j))
+                edges[i].append([j, dist])
+                edges[j].append([i, dist])
 
-        chk = [i for i in range(len(points))]
+        chk = set()
+        heap = [(0, 0)]
         result = 0
 
-        while data:
-            dist, start, end = heapq.heappop(data)
-            if find(start) == find(end):
-                continue
+        while len(chk) < n:
+            dist, point = heapq.heappop(heap)
+            if point in chk: continue
             result += dist
-            union(start, end)
+            chk.add(point)
+
+            for next_point, next_dist in edges[point]:
+                if next_point in chk: continue
+                heapq.heappush(heap, (next_dist, next_point))
 
         return result
