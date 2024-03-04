@@ -1,18 +1,16 @@
 class Solution:
     def leafSimilar(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> bool:
-        def get_sequence(node):
+        def get_sequence(node, lst):
             if not node.left and not node.right:
-                seq.append(node.val)
+                lst.append(node.val)
             if node.left:
-                get_sequence(node.left)
+                get_sequence(node.left, lst)
             if node.right:
-                get_sequence(node.right)
+                get_sequence(node.right, lst)
 
 
-        seq = list()
-        get_sequence(root1)
-        seq1 = deepcopy(seq)
-        seq.clear()
-        get_sequence(root2)
+        seq1, seq2 = list(), list()
+        get_sequence(root1, seq1)
+        get_sequence(root2, seq2)
 
-        return seq == seq1
+        return seq1 == seq2
