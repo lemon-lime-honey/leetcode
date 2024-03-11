@@ -1,8 +1,18 @@
 class Solution:
     def customSortString(self, order: str, s: str) -> str:
-        rank = [26 for i in range(26)]
+        letters = {letter: 0 for letter in order}
+        result = list()
 
-        for i in range(len(order)):
-            rank[ord(order[i]) - ord('a')] = i
+        for letter in s:
+            if letter in letters:
+                letters[letter] += 1
 
-        return ''.join(sorted(list(s), key=lambda x: rank[ord(x) - ord('a')]))
+        for letter in order:
+            for i in range(letters[letter]):
+                result.append(letter)
+
+        for letter in s:
+            if letter not in letters:
+                result.append(letter)
+
+        return ''.join(result)
