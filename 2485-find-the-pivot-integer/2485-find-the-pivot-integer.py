@@ -1,18 +1,14 @@
 class Solution:
     def pivotInteger(self, n: int) -> int:
-        forward = [0 for i in range(n + 1)]
-        backward = [0 for i in range(n + 1)]
+        if n == 1: return 1;
+
+        prefix = [0 for i in range(n + 1)]
 
         for i in range(1, n + 1):
-            forward[i] = forward[i - 1] + i
-
-        backward[n] = n
+            prefix[i] = prefix[i - 1] + i
 
         for i in range(n - 1, 0, -1):
-            backward[i] = backward[i + 1] + i
-
-        for i in range(1, n + 1):
-            if forward[i] == backward[i]:
+            if prefix[n] - prefix[i - 1] == prefix[i]:
                 return i
 
         return -1
