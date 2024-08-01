@@ -3,6 +3,9 @@ class Solution:
         result = 0
 
         for detail in details:
-            if int(detail[11:13]) > 60: result += 1
+            if (detail[11] in '789' or 
+                (detail[11] == '6' and detail[12] != '0')):
+                result += 1
+                print(detail)
 
         return result
