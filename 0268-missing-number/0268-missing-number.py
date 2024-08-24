@@ -1,16 +1,11 @@
 class Solution:
     def missingNumber(self, nums: List[int]) -> int:
-        mask = (1 << len(nums) + 1) - 1
-        num = 0
+        result = 0
 
-        for n in nums:
-            num |= 1 << n
+        for i in range(1, len(nums) + 1):
+            result ^= i
 
-        num &= mask
+        for num in nums:
+            result ^= num
 
-        for i in range(len(nums) + 1):
-            if not num & 1:
-                return i
-            num >>= 1
-
-        return -1
+        return result
