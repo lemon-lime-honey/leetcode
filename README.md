@@ -6,10 +6,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0048-rotate-image](https://github.com/lemon-lime-honey/leetcode/tree/main/0048-rotate-image/) | Medium |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/lemon-lime-honey/leetcode/tree/main/2033-minimum-operations-to-make-a-uni-value-grid/) | Medium |
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0048-rotate-image](https://github.com/lemon-lime-honey/leetcode/tree/main/0048-rotate-image/) | Medium |
 | [0367-valid-perfect-square](https://github.com/lemon-lime-honey/leetcode/tree/main/0367-valid-perfect-square/) | Easy |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/lemon-lime-honey/leetcode/tree/main/2033-minimum-operations-to-make-a-uni-value-grid/) | Medium |
 ## Sorting
@@ -19,6 +21,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0048-rotate-image](https://github.com/lemon-lime-honey/leetcode/tree/main/0048-rotate-image/) | Medium |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/lemon-lime-honey/leetcode/tree/main/2033-minimum-operations-to-make-a-uni-value-grid/) | Medium |
 ## Binary Search
 | Problem Name | Difficulty |
