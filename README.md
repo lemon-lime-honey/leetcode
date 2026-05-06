@@ -7,6 +7,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0048-rotate-image](https://github.com/lemon-lime-honey/leetcode/tree/main/0048-rotate-image/) | Medium |
+| [1861-rotating-the-box](https://github.com/lemon-lime-honey/leetcode/tree/main/1861-rotating-the-box/) | Medium |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/lemon-lime-honey/leetcode/tree/main/2033-minimum-operations-to-make-a-uni-value-grid/) | Medium |
 ## Math
 | Problem Name | Difficulty |
@@ -22,6 +23,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0048-rotate-image](https://github.com/lemon-lime-honey/leetcode/tree/main/0048-rotate-image/) | Medium |
+| [1861-rotating-the-box](https://github.com/lemon-lime-honey/leetcode/tree/main/1861-rotating-the-box/) | Medium |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/lemon-lime-honey/leetcode/tree/main/2033-minimum-operations-to-make-a-uni-value-grid/) | Medium |
 ## Binary Search
 | Problem Name | Difficulty |
@@ -35,4 +37,5 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0061-rotate-list](https://github.com/lemon-lime-honey/leetcode/tree/main/0061-rotate-list/) | Medium |
+| [1861-rotating-the-box](https://github.com/lemon-lime-honey/leetcode/tree/main/1861-rotating-the-box/) | Medium |
 <!---LeetCode Topics End-->
