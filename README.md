@@ -9,6 +9,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0048-rotate-image](https://github.com/lemon-lime-honey/leetcode/tree/main/0048-rotate-image/) | Medium |
 | [1861-rotating-the-box](https://github.com/lemon-lime-honey/leetcode/tree/main/1861-rotating-the-box/) | Medium |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/lemon-lime-honey/leetcode/tree/main/2033-minimum-operations-to-make-a-uni-value-grid/) | Medium |
+| [2553-separate-the-digits-in-an-array](https://github.com/lemon-lime-honey/leetcode/tree/main/2553-separate-the-digits-in-an-array/) | Easy |
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -38,4 +39,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0061-rotate-list](https://github.com/lemon-lime-honey/leetcode/tree/main/0061-rotate-list/) | Medium |
 | [1861-rotating-the-box](https://github.com/lemon-lime-honey/leetcode/tree/main/1861-rotating-the-box/) | Medium |
+## Simulation
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2553-separate-the-digits-in-an-array](https://github.com/lemon-lime-honey/leetcode/tree/main/2553-separate-the-digits-in-an-array/) | Easy |
 <!---LeetCode Topics End-->
