@@ -15,6 +15,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0048-rotate-image](https://github.com/lemon-lime-honey/leetcode/tree/main/0048-rotate-image/) | Medium |
 | [0367-valid-perfect-square](https://github.com/lemon-lime-honey/leetcode/tree/main/0367-valid-perfect-square/) | Easy |
+| [0509-fibonacci-number](https://github.com/lemon-lime-honey/leetcode/tree/main/0509-fibonacci-number/) | Easy |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/lemon-lime-honey/leetcode/tree/main/2033-minimum-operations-to-make-a-uni-value-grid/) | Medium |
 ## Sorting
 | Problem Name | Difficulty |
@@ -50,4 +51,16 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0181-employees-earning-more-than-their-managers](https://github.com/lemon-lime-honey/leetcode/tree/main/0181-employees-earning-more-than-their-managers/) | Easy |
 | [0584-find-customer-referee](https://github.com/lemon-lime-honey/leetcode/tree/main/0584-find-customer-referee/) | Easy |
 | [0620-not-boring-movies](https://github.com/lemon-lime-honey/leetcode/tree/main/0620-not-boring-movies/) | Easy |
+## Dynamic Programming
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0509-fibonacci-number](https://github.com/lemon-lime-honey/leetcode/tree/main/0509-fibonacci-number/) | Easy |
+## Recursion
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0509-fibonacci-number](https://github.com/lemon-lime-honey/leetcode/tree/main/0509-fibonacci-number/) | Easy |
+## Memoization
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0509-fibonacci-number](https://github.com/lemon-lime-honey/leetcode/tree/main/0509-fibonacci-number/) | Easy |
 <!---LeetCode Topics End-->
