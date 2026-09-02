@@ -2,15 +2,21 @@ class Solution {
 public:
     int climbStairs(int n) {
         if (n == 1) return 1;
+        if (n == 2) return 2;
 
-        int now = 1, before = 1;
+        int first = 1;
+        int second = 2;
 
-        for (int i = 1; i < n; i++) {
-            int temp = now;
-            now = temp + before;
-            before = temp;
+        for (int i = 3; i <= n; i++) {
+            int temp = first + second;
+            first = second;
+            second = temp;
         }
 
-        return now;
+        return second;
     }
 };
+
+// Synced seamlessly with LeetHub Pro
+// Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
+// Get it here: https://chromewebstore.google.com/detail/bcilpkkbokcopmabingnndookdogmbna
