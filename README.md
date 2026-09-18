@@ -99,10 +99,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0003-longest-substring-without-repeating-characters](https://github.com/lemon-lime-honey/leetcode/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0208-implement-trie-prefix-tree](https://github.com/lemon-lime-honey/leetcode/tree/main/0208-implement-trie-prefix-tree/) | Medium |
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0003-longest-substring-without-repeating-characters](https://github.com/lemon-lime-honey/leetcode/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0208-implement-trie-prefix-tree](https://github.com/lemon-lime-honey/leetcode/tree/main/0208-implement-trie-prefix-tree/) | Medium |
 ## Design
 | Problem Name | Difficulty |
@@ -112,4 +114,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0208-implement-trie-prefix-tree](https://github.com/lemon-lime-honey/leetcode/tree/main/0208-implement-trie-prefix-tree/) | Medium |
+## Sliding Window
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0003-longest-substring-without-repeating-characters](https://github.com/lemon-lime-honey/leetcode/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
 <!---LeetCode Topics End-->
